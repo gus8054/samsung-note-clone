@@ -218,6 +218,10 @@
   background-color: var(--title-color);
 }
 @media screen and (width <= 30rem) {
+  .layout {
+    height: fit-content;
+    overflow-y: visible;
+  }
   .index__footer {
     bottom: 1rem;
     right: 1rem;
