@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="create.js"></script>
+    <title>노트</title>
+  </head>
+  <body>
+    <div class="form__container layout">
+      <form class="form">
+        <header class="form__header">
+          <a href="/"><i class="bx bxs-chevron-left"></i></a>
+          <input
+            class="form__title"
+            type="text"
+            name="title"
+            id="title"
+            placeholder="제목"
+            required
+            autofocus
+            tabindex="1"
+          />
+          <button class="form__btn" tabindex="3">
+            <i class="bx bx-save"></i>
+          </button>
+        </header>
+        <textarea
+          class="form__content"
+          name="content"
+          id="content"
+          maxlength="1000"
+          required
+          tabindex="2"
+        ></textarea>
+      </form>
+    </div>
+  </body>
+</html>
