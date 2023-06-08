@@ -2,7 +2,7 @@ const http = require("node:http");
 const { URL } = require("node:url");
 const fs = require("node:fs");
 const path = require("node:path");
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 const server = http.createServer((req, res) => {
   const { pathname, searchParams } = new URL(
@@ -50,6 +50,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(8000, () => {
+server.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
 });
