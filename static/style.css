@@ -70,6 +70,7 @@
   color: var(--title-color);
   background-color: var(--main-bg-color);
   padding: 1rem 0;
+  z-index: 9;
 }
 .index__nav__right {
   flex-grow: 1;
@@ -215,6 +216,12 @@
 
 .index__footer:is(:hover, :focus) {
   background-color: var(--title-color);
+}
+@media screen and (width <= 30rem) {
+  .index__footer {
+    bottom: 1rem;
+    right: 1rem;
+  }
 }
 /* create-note */
 .form__container {
